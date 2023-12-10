@@ -1,6 +1,5 @@
 "use client";
 
-// import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { LayoutDashboard, MessageSquare, ImageIcon, VideoIcon, Music, Code, Settings } from "lucide-react";
@@ -8,7 +7,7 @@ import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 
-// const montserrat = Montserrat({ weight: "600", subsets: ["latin"] });
+// const poppins = Montserrat({ weight: "600", subsets: ["latin"] });
 
 const routes = [
   {
@@ -64,7 +63,6 @@ const Sidebar = () => {
           <div className="relative w-32 h-16 mr-4">
             <Image fill alt="Logo" src="/Einstein-logo-AI.png" />
           </div>
-          {/* <h1 className={cn("text-2xl font-bold", montserrat.className)}>Einstein</h1> */}
         </Link>
         <div className="space-y-1">
           {routes.map((route) => (
@@ -84,6 +82,10 @@ const Sidebar = () => {
           ))}
         </div>
       </div>
+      {/* <FreeCounter 
+        apiLimitCount={apiLimitCount} 
+        isPro={isPro}
+      /> */}
     </div>
   );
 };
